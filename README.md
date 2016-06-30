@@ -1,7 +1,9 @@
 
+Main code in max_words.py
+
 Exercise instructions:
 
-Find the most common occurring words in a collection of text files and the sentences where they are used to print out the information similar to the following table:
+Find the most common occurring words in a collection of text files and the sentences where they are used. The following table is one possiblity to express the results:
 
 
 
@@ -16,7 +18,7 @@ Find the most common occurring words in a collection of text files and the sente
 This table is an example, you have the flexibility to modify the final output display as per your wish.
 The idea behind it is to build a reusable solution which can be extended to other documents and text sources.
 
-Main code in max_words.py
+
 
 
 
