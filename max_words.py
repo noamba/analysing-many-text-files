@@ -12,6 +12,7 @@ again for printing the lines) and increased file readings add to processing time
 An alternative approach could load all sentences to memory which could lead to
 better performance in some cases. But, this approach could cause substantial slow-down
 if the data structure becomes larger than RAM. 
+
 For bigger collections it may well make sense to use some sort of persistence 
 such as a database or a data-structure store?   
 
