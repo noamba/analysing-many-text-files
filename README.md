@@ -1,5 +1,7 @@
 
-Main code in max_words.py
+Main code: max_words.py
+Example results output: example_results.txt
+Directory with files to analyse: production_docs
 
 Exercise instructions:
 
