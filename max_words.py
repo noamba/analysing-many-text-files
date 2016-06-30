@@ -9,9 +9,9 @@ The downside of this approach is
 that files must be passed twice (once for building the data structure and
 again for printing the lines) and increased file readings add to processing time.
 
-An alternative approach could load all sentences to memory which would lead to
-better performance. But, this approach could cause substantial slow-down
-with many files causing the data structure to be larger than RAM.
+An alternative approach could load all sentences to memory which could lead to
+better performance in some cases. But, this approach could cause substantial slow-down
+if the data structure becomes larger than RAM.
 There is a trade-off between the approaches.
 
 
