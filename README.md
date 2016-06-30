@@ -1,10 +1,11 @@
 
+#Code and Files#
 Main code: max_words.py  
 Example results output: example_results.txt  
 Directory with files to analyse: production_docs  
 
 
-Exercise instructions:
+#Exercise instructions#
 
 Find the most common occurring words in a collection of text files and the sentences where they are used. The following table is one possiblity to express the results:
 
