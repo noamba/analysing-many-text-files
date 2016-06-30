@@ -1,7 +1,7 @@
 import unittest
 from max_words import *
 
-TEST_DOCUMENTS_PATH = "./testing_docs"
+DOCUMENTS_PATH = "./testing_docs"
 
 
 class MyTest(unittest.TestCase):
@@ -9,7 +9,7 @@ class MyTest(unittest.TestCase):
     def test_are_there_files_for_testing(self):
         files = []
 
-        for (dirpath, _, filenames) in walk(TEST_DOCUMENTS_PATH):
+        for (dirpath, _, filenames) in walk(DOCUMENTS_PATH):
             # first loop will give top directory files only.
             # list comprension to add relative path to filename.
             files = ["{}/{}".format(dirpath, filename) for filename in
@@ -19,10 +19,10 @@ class MyTest(unittest.TestCase):
         self.assertTrue(len(files) > 0)
 
     def test_getting_file_names(self):
-        self.assertTrue(len(get_files(TEST_DOCUMENTS_PATH)) > 0)
+        self.assertTrue(len(get_files(DOCUMENTS_PATH)) > 0)
 
     def test_word_data_structure(self):
-        ds = build_word_ds(get_files(TEST_DOCUMENTS_PATH))
+        ds = build_word_ds(get_files(DOCUMENTS_PATH))
         # get any item from dict:
         item = next(iter(ds.keys()))
 

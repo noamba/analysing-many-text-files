@@ -3,8 +3,8 @@ This solution is one possible version. The sentences in the files are loaded
 to memory one file at a time (as opposed to loading all the
 sentences from ALL files to memory).
 This allows analysis of many files, as long as
-each file can fit in memory (an average book size is about 1 Mb, so this
-should'nt be a problem).
+each file can fit in memory (an average size of a large book (800 pages)
+is about 1 Mb, so this should'nt be a problem).
 The downside of this approach is
 that files must be passed twice (once for building the data structure and
 again for printing the lines) and increased file readings add to processing time.
@@ -36,8 +36,8 @@ import re
 import heapq
 import nltk.data
 
-# TEST_DOCUMENTS_PATH = "./production_docs"
-TEST_DOCUMENTS_PATH = "./testing_docs"
+DOCUMENTS_PATH = "./production_docs"
+# DOCUMENTS_PATH = "./testing_docs"
 NUMBER_OF_TOP_WORDS = 3
 
 
@@ -185,4 +185,4 @@ def get_sentences(dict_of_files_and_line_numbers):
 
 
 if __name__ == '__main__':
-    print_top_words_in_files(TEST_DOCUMENTS_PATH, NUMBER_OF_TOP_WORDS)
+    print_top_words_in_files(DOCUMENTS_PATH, NUMBER_OF_TOP_WORDS)
