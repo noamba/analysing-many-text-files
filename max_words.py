@@ -50,7 +50,7 @@ def print_top_words_in_files(path, number_of_top_words):
     :param path: path to files
     """
     files_to_analyse = get_files(path)
-    word_dict = build_word_ds(files_to_analyse)
+    word_dict = build_word_dict(files_to_analyse)
     top_words = heapq.nlargest(number_of_top_words,
                                word_dict,
                                key=lambda key: word_dict[key][0])
@@ -77,7 +77,7 @@ def get_files(path):
     return files
 
 
-def build_word_ds(files):
+def build_word_dict(files):
     """
     Build a dictionary of words (word_dict) where each key is a word
     appearing in the files and each value is a list containing a counter,

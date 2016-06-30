@@ -22,7 +22,7 @@ class MyTest(unittest.TestCase):
         self.assertTrue(len(get_files(DOCUMENTS_PATH)) > 0)
 
     def test_word_data_structure(self):
-        ds = build_word_ds(get_files(DOCUMENTS_PATH))
+        ds = build_word_dict(get_files(DOCUMENTS_PATH))
         # get any item from dict:
         item = next(iter(ds.keys()))
 
