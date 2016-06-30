@@ -1,15 +1,17 @@
 """
-This solution is one possible version that does not load all the sentences
-in files to memory.
-This allows analysis of very large files. The downside of this approach is
+This solution is one possible version. The sentences in the files are loaded
+to memory one file at a time (as opposed to loading all the
+sentences from ALL files to memory).
+This allows analysis of many files, as long as
+each file can fit in memory (an average book size is about 1 Mb, so this
+should'nt be a problem).
+The downside of this approach is
 that files must be passed twice (once for building the data structure and
-again for printing the lines).
-Increased file manipulations add to processing time.
+again for printing the lines) and increased file readings add to processing time.
 
 An alternative approach could load all sentences to memory which would lead to
-better performance with relatively short files (like the files given
-in this exercise).
-But, this approach could cause substantial slow-down with big files.
+better performance. But, this approach could cause substantial slow-down
+with many files causing the data structure to be larger than RAM.
 There is a trade-off between the approaches.
 
 
