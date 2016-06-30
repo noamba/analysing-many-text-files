@@ -7,7 +7,7 @@ Directory with files to analyse: production_docs
 
 #Exercise instructions#
 
-Find the most common occurring words in a collection of text files and the sentences where they are used. The following table is one possiblity to express the results:
+Find the most common occurring words and the sentences where they are used in a collection of text files. The following table is one possiblity to express the results:
 
 
 
